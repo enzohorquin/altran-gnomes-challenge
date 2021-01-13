@@ -1,0 +1,25 @@
+@import '../../../stlyes/utils/variables.scss';
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+@media only screen and (min-width: $min-smartphone) and (max-width: $max-smartphone-landscape) {
+  
+    .list-container {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+
+@media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  
+    .list-container {
+        width: 100%;
+    }
+  }
