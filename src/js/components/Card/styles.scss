@@ -1,0 +1,49 @@
+@import '../../../stlyes/utils/colors.scss';
+@import '../../../stlyes/utils/variables.scss';
+
+.card-container {
+    max-width: 20rem;
+    border-radius: 4px;
+    border-color: $dark-outlined;
+    margin: 16px;
+    background-color: $dark-background;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05), 0 0px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 250px;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+}
+
+.avatar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $red;
+    font-size: 1.25rem;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+.name {
+    font-family: $main-font-regular;
+    font-size: $text-xl;
+    color: $white;
+}
