@@ -79,5 +79,14 @@
 .hair-color-container {
     display: flex;
     flex-direction: row;
+}
 
+.spinner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 100px;
 }
