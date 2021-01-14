@@ -18,7 +18,6 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(url);
-      console.log(res);
       setGnomes(res.data?.Brastlewark || []);
       setTimeout(() => setIsLoading(false), 300);
     };
