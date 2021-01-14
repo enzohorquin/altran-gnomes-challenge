@@ -39,11 +39,45 @@
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+}
+
+.hair-color {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .name {
     font-family: $main-font-regular;
     font-size: $text-xl;
     color: $white;
+}
+.card-description-container {
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    width: 100%;
+    margin: 6px  6px;
+}
+.card-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.attributes {
+    color: $white;
+    font-size: 1.10rem;
+    margin: 6px  6px;
+}
+
+.hair-color-container {
+    display: flex;
+    flex-direction: row;
+
 }

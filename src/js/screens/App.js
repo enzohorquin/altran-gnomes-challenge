@@ -5,7 +5,6 @@ import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
 import SearchInput from '../components/SearchInput/SearchInput';
 import { filter } from 'lodash';
-
 import '../../stlyes/main.scss';
 
 const url = 'https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json';
