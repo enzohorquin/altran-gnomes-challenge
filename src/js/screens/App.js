@@ -18,18 +18,17 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(url);
+      console.log(res);
       setGnomes(res.data?.Brastlewark || []);
       setTimeout(() => setIsLoading(false), 300);
     };
-    /* setIsLoading(true); */
     fetchData();
   }, []);
 
   const searchGnome = () => filter(gnomes, (gnome) => gnome.name.indexOf(searchValue) !== -1);
   const filteredGnomes = searchValue === '' ? gnomes : searchGnome();
 
-  const render = isLoading ? <div className='spinner-container'> <CircularProgress size='6rem' /> </div> : <CardList gnomes={filteredGnomes} />
-
+  const render = isLoading ? <div data-testid='loading' className='spinner-container'> <CircularProgress size='6rem' /> </div> : <CardList gnomes={filteredGnomes} />
 
   return (
     <Layout>
