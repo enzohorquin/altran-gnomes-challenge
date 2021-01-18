@@ -6,7 +6,7 @@ import Header from '../components/Header/Header';
 import SearchInput from '../components/SearchInput/SearchInput';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { filter } from 'lodash';
-import '../../stlyes/main.scss';
+import '../../styles/main.scss';
 
 const url = 'https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json';
 
